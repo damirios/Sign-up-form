@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="background-box">
+            <div class="logo-box">
+                <img src='/images/odin-lined.png' alt="logo">
+                <div class="logo__title">ODIN</div>
+            </div>
+        </div>
+        <div class="form-box">
+            <div class="form__title">
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form__shell">
+                <div class="form__subtitle">Let's do this!</div>
+                <form action="#" method="get" class="form">
+                    <div class="form__blocks">
+                        <div class="form__block">
+                            <div class="form__element">
+                                <label for="first">first name</label>
+                                <input type="text" id="first" name="first-name" required>
+                            </div>
+                            <div class="form__element">
+                                <label for="last">last name</label>
+                                <input type="text" id="last" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form__block">
+                            <div class="form__element">
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form__element">
+                                <label for="phone">phone number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form__block">
+                            <div class="form__element">
+                                <label for="password">password</label>
+                                <input class='password' type="password" id="password" name="password" required>
+                            </div>
+                            <div class="form__element">
+                                <label for="confirm">confirm password</label>
+                                <input class='password' type="password" id="confirm" name="password-confirm" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form__btn" type="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="log-in">Already have an account? <a href="#">Log in</a></div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
