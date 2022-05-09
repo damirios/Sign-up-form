@@ -54,7 +54,7 @@ body {
 /* Шрифт */
 @font-face {
     font-family: Norse;
-    src: url('/fonts/Norse-Bold.otf');
+    src: url('../fonts/Norse-Bold.otf');
 }
 
 /* Конец обнуления */
@@ -88,7 +88,7 @@ input:focus {
     display: flex;
 }
 .background-box {
-    background: url('/images/bg.jpg') center/ cover;
+    background: url('../images/bg.jpg') center/ cover;
     flex: 0 0 40%;
 }
 .logo-box {
