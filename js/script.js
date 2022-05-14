@@ -10,19 +10,19 @@ submitButton.addEventListener('click', (e) => {
     if (password && passwordConfirm) {
         const currentPassword = password.value;
         const currentPasswordConfirm = passwordConfirm.value;
-        if (currentPassword != currentPasswordConfirm && !errorCheck) {
-            const errorMessage = document.createElement('p');
-            errorMessage.textContent = 'Passwords are not match!';
-            errorMessage.style.color = "red";
-            errorMessage.style.fontSize = '12px';
-            errorMessage.style.position = 'absolute';
-            errorMessage.classList = "error-message";
-            formBlocks.appendChild(errorMessage);
-            errorInputs.forEach(errorInput => errorInput.classList.add('error'));
-            errorCheck = 1;
+        if (currentPassword != currentPasswordConfirm) {
             e.preventDefault();
-        } else {
-            
+            if (!errorCheck) {
+                const errorMessage = document.createElement('p');
+                errorMessage.textContent = 'Passwords are not match!';
+                errorMessage.style.color = "red";
+                errorMessage.style.fontSize = '12px';
+                errorMessage.style.position = 'absolute';
+                errorMessage.classList = "error-message";
+                formBlocks.appendChild(errorMessage);
+                errorInputs.forEach(errorInput => errorInput.classList.add('error'));
+                errorCheck = 1; 
+            }
         }
     }
 });
